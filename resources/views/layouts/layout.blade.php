@@ -158,11 +158,9 @@
                                 </div>
                             </div>
                             <div class="page-title-actions">
-                                @if(count(explode('/', $_SERVER['PATH_INFO'])) > 2)
                                 <a href="{{ URL::previous() }}" class="btn btn-focus mm-active">
                                     <i class="fa fa-angle-left"></i> Kembali
                                 </a>
-                                @endif
                                 @yield('top-button')
                             </div>
                         </div>
