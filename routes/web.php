@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('auth', 'auth.login');
-});
+Route::view('/', 'auth.login');
 
 Route::view('auth', 'auth.login')->name('auth');
 Route::view('dashboard', 'qna.index')->name('dashboard');
